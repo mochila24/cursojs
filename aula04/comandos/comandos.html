@@ -11,17 +11,44 @@
     <!-- comentário em html. Não aceita outro modelo-->
     <script>
         // ou /* mais de uma linha */ para comentário em javascript. Diferente do usado para html.
+        var s = 'JavaScript'
+        var s1 = '2'
+        var n1 = 5
+        var n2 = 5.5
    window.alert('Minha primeira mensagem!') //aparecer o banner com a mensagem
    window.confirm('Está gostando do JS?') // parece o alert, mas tem a opção confirmar
    window.prompt('Qual seu nome?') //forma de interagir com usuário fazendo digitar no banner
-   // + é usado para concatenar com variáveis. ('é um prazer te conhecer ' + n1 + '!') 
+   // + é usado para concatenar com variáveis. ('é um prazer te conhecer ' + s + '!') 
    // prompt sempre retorna string
-   //Number.parseInt(n) converte em númeto inteiro
-   //Number.parseFloat(n) converte em número decimal
-   //Number(n) converte em número. Pode ser inteiro ou decimal
-   //String(n) converte em string
-   // n.toString() converte em string
-   // `Eu estrou aprendendo ${n}` com o uso da crase não precisa do "+" para concatenar.
+   //Number.parseInt(s1) converte em númeto inteiro
+   //Number.parseFloat(s1) converte em número decimal
+   //Number(s1) converte em número. Pode ser inteiro ou decimal
+   //String(n1) converte em string
+   // n1.toString() converte em string
+   // `Eu estrou aprendendo ${s}` com o uso da crase não precisa do "+" para concatenar.
+   // s.length diz quantos caracteres a string tem.
+   // s.toUpperCase() tranforma em maiúsculas.
+   // s.toLowerCase() transforma em minúsculas.
+   // document.write(`Seu nome tem ${s.length} letras`) write tem a função de escrever no documento.
+   // <br/> quebre para linha debaixo 
+   // <strong> fica em negrito </strong>
+   // n1.toFixed(2) para duas casas decimais
+   // n1.toFixed(2).replace('.',',') replace é usado para sustituir o da primeira aspas pelo que ta na segunda aspas.
+   //n1.toLocaleString('pt-BR',{style: 'currency', currency:'BRL'}) coloca no formato de dinheiro R$.
+   /* operadores:
+   aritméticos (+,-,*,/,% = 'resto da divisão',** = 'potência')
+        precedência: primeiro **; depois *,/,%; depois +,-
+   atribuição
+        auto-atribuição: n1 = n1 + 4 ou n1 += 4 (serve tb n1 **=2, ou n1 %= 2)
+        incremento: n1 = n1 + 1 ou n++ ou ++n (serve tb --n ou n--)
+   relacionais (>, <, >=, <=, ==, !=) o resultado é true ou false
+        precedência: primeiro os aritméticos e depois os relacionais
+        identidade: (===) se é identico. 5 == '5' é true, 5 === '5' false. tem que ser igual e do mesmo tipo.
+   lógicos (! = negação -> não; && = conjunção -> e; || = disjunção -> ou)
+   ternário
+
+
+
 
 
 
