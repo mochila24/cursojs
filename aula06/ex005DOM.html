@@ -17,7 +17,7 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
         window.document.writeln('Olá, Mundo!')
         window.document.writeln(window.document.URL)
@@ -26,6 +26,9 @@
         window.document.writeln('Está escrito assim: ' + p1.innerText) //"para pegar o que está dentro do primeiro parágrafo"
         p1.style.color = 'red'
         document.write(p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        window.document.getElementById('msg').innerText = 'Olá!' // innerText muda o texto
 
 
 
@@ -42,18 +45,21 @@
                 body: h1 / p / p / div
                     segundo p: strong
 métodos de acesso
-por Marca (getElementsByTagName())
+por TagName - getElementsByTagName()
     seleciona por tag. Podendo selecionar por mais de uma tag.
     var p1 = window.document.getElementsByTagName('p')[0] //"para selecionar a primeira tag de parágrafo"
     window.document.write(p1.innerText) //"para pegar o que está dentro do primeiro parágrafo"
     p1.innerHTML para trazer o texto escrito no parágrafo com a formatação tbm, ou seja, com as tags filhas.
     para mudar o style da tag específica: p1.style.color = 'blue'
-por ID (getElementById())
 
+por ID - getElementById()) // quanto Element tá no singular, não precisa o colchetes para indicar qual
+    window.document.getElementById('msg').innerText = 'Olá' // muda o texto do "id"
 
-por Nome (getElements)
-por Classe
-por Seletor
+por Nome - getElementsByName()
+
+por Classe - getElementsByClassName()
+
+por Seletor - querySelector('div#msg') quando ID usa hastag, quando CLASS por ponto
 
 
 
