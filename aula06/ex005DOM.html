@@ -19,8 +19,42 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
     <div>Clique em mim</div>
     <script>
+        window.document.writeln('Olá, Mundo!')
+        window.document.writeln(window.document.URL)
+        window.document.writeln(window.navigator.appName)
+        var p1 = window.document.getElementsByTagName('p')[1] //"para selecionar a primeira tag de parágrafo"
+        window.document.writeln('Está escrito assim: ' + p1.innerText) //"para pegar o que está dentro do primeiro parágrafo"
+        p1.style.color = 'red'
+        document.write(p1.innerHTML)
+
+
 
     </script>
     
 </body>
 </html>
+
+<!-- Árvore DOM
+    window: location / document / history
+        document: html
+            html: head / body
+                head: meta / title
+                body: h1 / p / p / div
+                    segundo p: strong
+métodos de acesso
+por Marca (getElementsByTagName())
+    seleciona por tag. Podendo selecionar por mais de uma tag.
+    var p1 = window.document.getElementsByTagName('p')[0] //"para selecionar a primeira tag de parágrafo"
+    window.document.write(p1.innerText) //"para pegar o que está dentro do primeiro parágrafo"
+    p1.innerHTML para trazer o texto escrito no parágrafo com a formatação tbm, ou seja, com as tags filhas.
+    para mudar o style da tag específica: p1.style.color = 'blue'
+por ID (getElementById())
+
+
+por Nome (getElements)
+por Classe
+por Seletor
+
+
+
+-->
