@@ -1,20 +1,20 @@
 body {
-    background: rgb(3, 82, 3);
+    background: rgb(3, 82, 3);/*cor do fundo*/
     font: normal 15pt Arial;
 }
 
 header {
     color: white;
-    text-align: center;
+    text-align: center; /*centralizado*/
 
 }
 
 section {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin:  auto;
+    background: white; /*cor do fundo da section*/
+    border-radius: 10px; /* raio da borda*/
+    padding: 15px; /*espaço dentro (tamanho)*/
+    width: 500px;/*largura fixa*/
+    margin:  auto; /*centralizar no meio da tela*/
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.534); /*sombreamento */
 
 }
@@ -22,5 +22,6 @@ section {
 footer {
     color: white;
     text-align: center;
-    font-style: italic;
+    font: italic 10pt arial;
+    /*font-style: italic;*/
 }
