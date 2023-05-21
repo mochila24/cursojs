@@ -19,6 +19,11 @@ section {
 
 }
 
+div {
+    text-align: center;
+    padding: 8px; /* espaço dentro da div*/
+}
+
 footer {
     color: white;
     text-align: center;
